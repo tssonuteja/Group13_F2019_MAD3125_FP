@@ -14,5 +14,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onLoginClick(View view) {
+        //test
     }
 }
