@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
     android:background="#fff">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -70,4 +70,3 @@
 
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
