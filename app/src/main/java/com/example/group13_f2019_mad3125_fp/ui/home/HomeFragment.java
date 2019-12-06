@@ -25,5 +25,6 @@ public View onCreateView(@NonNull LayoutInflater inflater,
     View root = inflater.inflate(R.layout.fragment_home, container, false);
     final TextView textView = root.findViewById(R.id.text_home);
     Date currentTime = Calendar.getInstance().getTime();
+    textView.setText(currentTime.toString());
                         }
 }
