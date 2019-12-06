@@ -22,7 +22,5 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
             }
         }, TIME_OUT);
-
-
     }
 }
