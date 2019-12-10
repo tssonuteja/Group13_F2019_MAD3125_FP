@@ -35,6 +35,20 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return 0;
+        return payrollDataList.size();
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onPayrollClicked.onPayrollClicked(getAdapterPosition());
+                }
+            });
+        }
     }
 }
+
