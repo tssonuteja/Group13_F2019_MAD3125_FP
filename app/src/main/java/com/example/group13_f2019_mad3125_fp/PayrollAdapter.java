@@ -1,6 +1,8 @@
 package com.example.group13_f2019_mad3125_fp;
 
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -21,7 +23,9 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
     @NonNull
     @Override
     public PayrollAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+
+        View view = LayoutInflater.from(context).inflate(R.layout.single_row_payrol_list, parent, false);
+        return new RecyclerView.ViewHolder(view);
     }
 
     @Override
