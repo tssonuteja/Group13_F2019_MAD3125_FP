@@ -10,4 +10,28 @@ public class PayrollData {
         this.plate = plate;
         this.job = job;
     }
-}
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getPlate() {
+            return plate;
+        }
+
+        public void setPlate(String plate) {
+            this.plate = plate;
+        }
+
+        public String getJob() {
+            return job;
+        }
+
+        public void setJob(String job) {
+            this.job = job;
+        }
+    }
