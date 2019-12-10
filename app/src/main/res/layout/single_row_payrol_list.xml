@@ -14,7 +14,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"/>
-       
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vehicle"/>
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
