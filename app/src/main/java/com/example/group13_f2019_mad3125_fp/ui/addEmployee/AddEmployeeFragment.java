@@ -44,6 +44,17 @@ public class AddEmployeeFragment extends Fragment {
         vehicle_details_layout = root.findViewById(R.id.vehicle_details_layout);
         rbCar  = root.findViewById(R.id.rb_car);
         rbBike = root.findViewById(R.id.rb_bike);
+        etName  = root.findViewById(R.id.et_name);
+        etSalary = root.findViewById(R.id.et_salary);
+        etBonus = root.findViewById(R.id.et_bonus);
+        etSchool = root.findViewById(R.id.et_school);
+        etRate = root.findViewById(R.id.et_rate);
+        etHours = root.findViewById(R.id.et_hours);
+        etCommission = root.findViewById(R.id.et_commission);
+        etFixed = root.findViewById(R.id.et_fixed_amount);
+        etMake =  root.findViewById(R.id.et_make);
+        etPlate = root.findViewById(R.id.et_plate);
+        tvDob = root.findViewById(R.id.tv_dob);
     }
 
 
