@@ -45,9 +45,9 @@ public class AddEmployeeFragment extends Fragment {
         rg_part_time = root.findViewById(R.id.rg_part_time);
         vehicle_layout = root.findViewById(R.id.vehicle_layout);
         vehicle_details_layout = root.findViewById(R.id.vehicle_details_layout);
-        rbCar  = root.findViewById(R.id.rb_car);
+        rbCar = root.findViewById(R.id.rb_car);
         rbBike = root.findViewById(R.id.rb_bike);
-        etName  = root.findViewById(R.id.et_name);
+        etName = root.findViewById(R.id.et_name);
         etSalary = root.findViewById(R.id.et_salary);
         etBonus = root.findViewById(R.id.et_bonus);
         etSchool = root.findViewById(R.id.et_school);
@@ -55,7 +55,7 @@ public class AddEmployeeFragment extends Fragment {
         etHours = root.findViewById(R.id.et_hours);
         etCommission = root.findViewById(R.id.et_commission);
         etFixed = root.findViewById(R.id.et_fixed_amount);
-        etMake =  root.findViewById(R.id.et_make);
+        etMake = root.findViewById(R.id.et_make);
         etPlate = root.findViewById(R.id.et_plate);
         tvDob = root.findViewById(R.id.tv_dob);
 
@@ -66,14 +66,12 @@ public class AddEmployeeFragment extends Fragment {
                     vehicle_layout.setVisibility(View.VISIBLE);
                     vehicle_details_layout.setVisibility(View.VISIBLE);
                     rbCar.setChecked(true);
-                }
-                else {
+                } else {
                     vehicle_layout.setVisibility(View.GONE);
                     vehicle_details_layout.setVisibility(View.GONE);
                 }
             }
         });
-
 
 
         rb_full_time.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -85,6 +83,20 @@ public class AddEmployeeFragment extends Fragment {
                     etFixed.setVisibility(View.GONE);
                 } else {
                     full_time_layout.setVisibility(View.GONE);
+                    etCommission.setVisibility(View.GONE);
+                    etFixed.setVisibility(View.GONE);
+                }
+            }
+        });
+        rb_intern.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    intern_layout.setVisibility(View.VISIBLE);
+                    etCommission.setVisibility(View.GONE);
+                    etFixed.setVisibility(View.GONE);
+                } else {
+                    intern_layout.setVisibility(View.GONE);
                     etCommission.setVisibility(View.GONE);
                     etFixed.setVisibility(View.GONE);
                 }
