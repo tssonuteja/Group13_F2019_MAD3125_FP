@@ -48,5 +48,27 @@
         android:id="@+id/vehicle_layout"
         android:visibility="gone">
 
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rb_car"
+            android:text="Car"
+            android:padding="10dp"
+            android:background="@color/white"/>
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rb_bike"
+            android:text="Motorcycle"
+            android:padding="10dp"
+            android:background="@color/white"/>
+    </RadioGroup>
+
 
 </ScrollView>
