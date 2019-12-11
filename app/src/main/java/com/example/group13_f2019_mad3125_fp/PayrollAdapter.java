@@ -41,5 +41,6 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
     public int getItemCount() {
         return employeeList.size();
     }
-
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        private TextView tvName, tvJob, tvVehicle;
 }
