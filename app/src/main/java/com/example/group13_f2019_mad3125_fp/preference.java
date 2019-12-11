@@ -17,4 +17,10 @@ public class preference {
         editor.apply();
     }
 
+    public void put(String key, boolean value){
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean(key, value);
+        editor.apply();
+    }
+
 }
