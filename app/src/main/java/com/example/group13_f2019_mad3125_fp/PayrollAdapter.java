@@ -55,5 +55,7 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
                     onPayrollClicked.onPayrollClicked(getAdapterPosition());
                 }
             });
+        }
+    }
 
         }
