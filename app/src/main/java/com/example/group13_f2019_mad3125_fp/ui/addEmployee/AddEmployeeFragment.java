@@ -147,6 +147,9 @@ public class AddEmployeeFragment extends Fragment {
 
         return root;
     }
+    private void onSaveClicked(){
+        Employee employee = new Employee();
+        Job job = new Job();
     }
 
 
