@@ -13,6 +13,7 @@ import android.preference.Preference;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
@@ -82,6 +83,36 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
         }
         return super.onOptionsItemSelected(item);
     }
+    private void setUpNavigationView() {
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.nav_home:
+                        openFragment(0);
+                        break;
+                    case R.id.nav_employee_payroll:
+                        openFragment(2);
+                        break;
+                    case R.id.nav_list_payroll:
+                        openFragment(1);
+                        break;
+                    case R.id.nav_help:
+                        showHelpDialog();
+                        menuItem.setChecked(false);
+                        break;
+                    case R.id.nav_logout:
+                        showLogoutDialog();
+                        menuItem.setChecked(false);
+                        break;
+                }
+
+                drawer.closeDrawers();
+                return true;
+            }
+        });
+    }
+
 
     @Override
     public boolean onSupportNavigateUp() {
