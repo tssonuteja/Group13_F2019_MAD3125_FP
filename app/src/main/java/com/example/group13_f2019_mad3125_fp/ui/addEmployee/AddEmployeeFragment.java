@@ -9,23 +9,21 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.example.group13_f2019_mad3125_fp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link AddEmployeeFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link AddEmployeeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class AddEmployeeFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
+    private RadioGroup rg_part_time, vehicle_layout;
+    private LinearLayout part_time_layout, intern_layout, full_time_layout, vehicle_details_layout;
+    private RadioButton rb_commission_based, rb_fixed_based, rb_part_time, rb_intern, rb_full_time, rbCar, rbBike;
+    private CheckBox has_vehicle_check;
+    EditText etName, etSalary, etBonus, etSchool, etRate, etHours, etCommission, etFixed, etMake, etPlate;
+    EditText tvDob;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
