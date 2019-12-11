@@ -65,5 +65,13 @@
         android:padding="5dp"
         android:textSize="14sp"
         android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_job_three"
+        android:text="Job3"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
 
 </ScrollView
