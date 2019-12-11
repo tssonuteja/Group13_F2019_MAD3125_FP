@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.group13_f2019_mad3125_fp.interfaces.OnPayrollClicked;
+
 import java.util.List;
 
 public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHolder> {
