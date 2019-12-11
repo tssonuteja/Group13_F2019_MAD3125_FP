@@ -43,4 +43,11 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
     }
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView tvName, tvJob, tvVehicle;
-}
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            tvName = itemView.findViewById(R.id.tv_name);
+            tvJob   = itemView.findViewById(R.id.tv_job);
+            tvVehicle = itemView.findViewById(R.id.tv_vehicle);
+
+        }
