@@ -24,12 +24,16 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity implements OpenTab {
     DrawerLayout drawer;
     NavigationView navigationView;
     Fragment[] fragments;
     Preference preference;
-
+    public static List<Employee> employeeList = new ArrayList<>();
+    
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
