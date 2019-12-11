@@ -8,6 +8,13 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
+import static com.example.group13_f2019_mad3125_fp.MainActivity.COMMISSION_BASED;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.FIXED_BASED;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.FULL_TIME;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.INTERN;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.PART_TIME;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.employeeList;
+
 
 public class PayrollDetailsActivity extends AppCompatActivity {
     Employee employee;
