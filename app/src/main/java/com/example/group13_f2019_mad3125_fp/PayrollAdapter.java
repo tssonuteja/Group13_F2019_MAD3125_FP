@@ -49,5 +49,11 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
             tvName = itemView.findViewById(R.id.tv_name);
             tvJob   = itemView.findViewById(R.id.tv_job);
             tvVehicle = itemView.findViewById(R.id.tv_vehicle);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onPayrollClicked.onPayrollClicked(getAdapterPosition());
+                }
+            });
 
         }
