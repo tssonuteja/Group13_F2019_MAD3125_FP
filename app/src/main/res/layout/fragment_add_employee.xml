@@ -247,4 +247,18 @@
         android:background="@color/white"
         android:inputType="numberDecimal"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_commission"
+        android:hint="Commission perc"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:inputType="numberDecimal"/>
+
 </ScrollView>
