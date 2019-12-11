@@ -19,4 +19,12 @@ public class Vehicle {
     public void setMake(String make) {
         this.make = make;
     }
+    public String getPlate() {
+        return plate;
+    }
+
+    public void setPlate(String plate) {
+        this.plate = plate;
+    }
+}
 }
