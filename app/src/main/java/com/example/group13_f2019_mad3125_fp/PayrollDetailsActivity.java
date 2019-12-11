@@ -57,7 +57,14 @@ public class PayrollDetailsActivity extends AppCompatActivity {
                 tv_job_three.setVisibility(View.GONE);
                 earning = job.getSalary()+job.getBonus();
                 break;
-
+            case PART_TIME:
+                if (job.getPartTimeType().equalsIgnoreCase(FIXED_BASED)) {
+                    tv_job_one.setText("Rate : " + job.getRate());
+                    tv_job_two.setText("Hours worked : " + job.getHours());
+                    tv_job_three.setText("Fixed amount : " + job.getFixed());
+                    tv_job_type.setText(FIXED_BASED);
+                    earning = job.getFixed() + (job.getRate() * job.getHours());
+                }
 
 }
 }
