@@ -3,7 +3,7 @@ package com.example.group13_f2019_mad3125_fp;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-public class preference {
+public class Preference {
 
     private SharedPreferences preferences;
 
@@ -22,6 +22,7 @@ public class preference {
         editor.putBoolean(key, value);
         editor.apply();
     }
+
     public boolean getBoolean(String key){
         return preferences.getBoolean(key, false);
     }
@@ -35,5 +36,6 @@ public class preference {
         editor.remove(key);
         editor.apply();
     }
+}
 
 }
