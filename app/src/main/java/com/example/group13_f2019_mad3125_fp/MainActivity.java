@@ -6,14 +6,12 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
-import com.example.group13_f2019_mad3125_fp.ui.addEmployee.AddEmployeeFragment;
-import com.example.group13_f2019_mad3125_fp.ui.home.HomeFragment;
-import com.example.group13_f2019_mad3125_fp.ui.listPayroll.ListPayrollFragment;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.example.group13_f2019_mad3125_fp.Preference;
+import com.example.group13_f2019_mad3125_fp.R;
+import com.example.group13_f2019_mad3125_fp.fragments.AddEmployeeFragment;
+import com.example.group13_f2019_mad3125_fp.fragments.HomeFragment;
+import com.example.group13_f2019_mad3125_fp.fragments.ListPayrollFragment;
 
-import android.preference.Preference;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -21,17 +19,16 @@ import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
+import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
+import com.example.group13_f2019_mad3125_fp.models.Employee;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.navigation.ui.AppBarConfiguration;
 
 import android.view.Menu;
 import android.view.Window;
@@ -39,6 +36,7 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity implements OpenTab {
     DrawerLayout drawer;
@@ -75,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.filter, menu);
         return true;
     }
     @Override
@@ -173,10 +171,9 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
         fragmentTransaction.commitAllowingStateLoss();
     }
 
+
     @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
-                || super.onSupportNavigateUp();
+    public void onOpenTab(int position) {
+        openFragment(position);
     }
 }
