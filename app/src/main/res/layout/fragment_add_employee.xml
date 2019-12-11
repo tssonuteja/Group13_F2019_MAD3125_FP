@@ -109,5 +109,38 @@
         android:layout_margin="5dp"
         android:background="@color/white"/>
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb_full_time"
+        android:text="Full Time"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_margin="2dp"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_intern"
+            android:text="Intern"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_margin="2dp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_part_time"
+            android:text="Part Time"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_margin="2dp"/>
+    </RadioGroup>
+
 
 </ScrollView>
