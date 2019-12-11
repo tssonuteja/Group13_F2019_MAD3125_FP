@@ -30,5 +30,9 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
         View view = LayoutInflater.from(context).inflate(R.layout.single_row_payrol_list, parent, false);
         return new ViewHolder(view);
     }
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        
+    }
 
 }
