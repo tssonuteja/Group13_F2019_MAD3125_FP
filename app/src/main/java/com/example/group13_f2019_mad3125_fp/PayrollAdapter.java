@@ -32,7 +32,7 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
     }
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        
+        Employee employee = employeeList.get(position);
     }
 
 }
