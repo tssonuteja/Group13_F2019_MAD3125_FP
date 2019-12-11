@@ -37,5 +37,7 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
         holder.tvVehicle.setText(employee.getVehicle().getIsA()+" : "+employee.getVehicle().getPlate());
 
     }
+    @Override
+    public int getItemCount() {
 
 }
