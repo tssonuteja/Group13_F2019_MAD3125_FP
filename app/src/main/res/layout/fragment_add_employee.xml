@@ -40,5 +40,13 @@
         android:layout_margin="5dp"
         android:textSize="14sp"/>
 
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/vehicle_layout"
+        android:visibility="gone">
+
 
 </ScrollView>
