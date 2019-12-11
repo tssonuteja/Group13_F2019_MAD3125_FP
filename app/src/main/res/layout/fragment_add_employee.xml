@@ -217,4 +217,23 @@
             android:inputType="text"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/part_time_layout"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_rate"
+        android:hint="Rate"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:inputType="numberDecimal"/>
+
 </ScrollView>
