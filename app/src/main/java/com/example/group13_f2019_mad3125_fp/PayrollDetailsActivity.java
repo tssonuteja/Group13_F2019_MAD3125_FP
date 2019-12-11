@@ -46,5 +46,18 @@ public class PayrollDetailsActivity extends AppCompatActivity {
     }
 
 
+    private double calculateEarning(){
+        double earning = 0;
+        Job job = employee.getJob();
+        switch (job.getJobType()){
+            case FULL_TIME:
+                tv_job_type.setText(FULL_TIME);
+                tv_job_one.setText("Salary : "+job.getSalary());
+                tv_job_two.setText("Bonus : "+job.getBonus());
+                tv_job_three.setVisibility(View.GONE);
+                earning = job.getSalary()+job.getBonus();
+                break;
+
+
 }
 }
