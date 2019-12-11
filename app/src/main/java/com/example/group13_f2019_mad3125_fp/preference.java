@@ -30,4 +30,10 @@ public class preference {
         return preferences.getString(key, "");
     }
 
+    public void clearData(String key){
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.remove(key);
+        editor.apply();
+    }
+
 }
