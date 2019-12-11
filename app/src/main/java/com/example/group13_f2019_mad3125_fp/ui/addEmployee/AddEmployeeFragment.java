@@ -128,6 +128,17 @@ public class AddEmployeeFragment extends Fragment {
                 }
             }
         });
+        rb_fixed_based.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b){
+                    etFixed.setVisibility(View.VISIBLE);
+                } else {
+                    etFixed.setVisibility(View.GONE);
+                }
+            }
+        });
+
     }
 
 
