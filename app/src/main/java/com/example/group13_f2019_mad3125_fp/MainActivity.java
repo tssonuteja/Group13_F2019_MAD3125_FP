@@ -1,5 +1,7 @@
 package com.example.group13_f2019_mad3125_fp;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
@@ -113,7 +115,22 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
         });
     }
 
-
+    private void showLogoutDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("Logout")
+                .setMessage("Are you sure you want to logout?")
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        preference.clearData("isLoggedIn");
+                        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                })
+                .setNegativeButton(android.R.string.no, null)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
