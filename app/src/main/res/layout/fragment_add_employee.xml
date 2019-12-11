@@ -30,5 +30,15 @@
         android:background="@color/white"
         android:inputType="number"/>
 
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/has_vehicle_check"
+        android:text="Has vehicle"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textSize="14sp"/>
+
 
 </ScrollView>
