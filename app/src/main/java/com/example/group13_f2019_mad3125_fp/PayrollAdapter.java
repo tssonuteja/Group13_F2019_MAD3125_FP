@@ -39,5 +39,7 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
     }
     @Override
     public int getItemCount() {
+        return employeeList.size();
+    }
 
 }
