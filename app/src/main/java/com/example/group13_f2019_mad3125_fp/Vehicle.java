@@ -12,4 +12,11 @@ public class Vehicle {
         this.isA = isA;
     }
 
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
 }
