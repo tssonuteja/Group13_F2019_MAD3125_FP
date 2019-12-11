@@ -49,4 +49,21 @@
         android:textSize="14sp"
         android:textColor="@color/black"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job1"
+        android:id="@+id/tv_job_one"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_job_two"
+        android:text="Job2"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
 </ScrollView
