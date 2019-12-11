@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
@@ -55,18 +56,23 @@ public class AddEmployeeFragment extends Fragment {
         etMake =  root.findViewById(R.id.et_make);
         etPlate = root.findViewById(R.id.et_plate);
         tvDob = root.findViewById(R.id.tv_dob);
+
+        has_vehicle_check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    vehicle_layout.setVisibility(View.VISIBLE);
+                    vehicle_details_layout.setVisibility(View.VISIBLE);
+                    rbCar.setChecked(true);
+                }
+                else {
+                    vehicle_layout.setVisibility(View.GONE);
+                    vehicle_details_layout.setVisibility(View.GONE);
+                }
+            }
+        });
     }
 
-
-    // TODO: Rename and change types and number of parameters
-    public static AddEmployeeFragment newInstance(String param1, String param2) {
-        AddEmployeeFragment fragment = new AddEmployeeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
