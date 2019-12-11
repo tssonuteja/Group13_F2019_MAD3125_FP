@@ -20,7 +20,9 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
     private List<Employee> employeeList;
     private OnPayrollClicked onPayrollClicked;
     public PayrollAdapter(Context context, List<Employee> employeeList, OnPayrollClicked onPayrollClicked) {
-        
+        this.context = context;
+        this.employeeList = employeeList;
+        this.onPayrollClicked = onPayrollClicked;
     }
 
 
