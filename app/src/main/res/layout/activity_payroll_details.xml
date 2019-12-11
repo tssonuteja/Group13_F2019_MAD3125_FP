@@ -19,4 +19,14 @@
         android:src="@drawable/ic_person"
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:text="Name (yr)"
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
 </ScrollView
