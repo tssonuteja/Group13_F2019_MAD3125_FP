@@ -27,5 +27,7 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.single_row_payrol_list, parent, false);
+    }
 
 }
