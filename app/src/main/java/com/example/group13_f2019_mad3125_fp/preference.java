@@ -22,5 +22,8 @@ public class preference {
         editor.putBoolean(key, value);
         editor.apply();
     }
+    public boolean getBoolean(String key){
+        return preferences.getBoolean(key, false);
+    }
 
 }
