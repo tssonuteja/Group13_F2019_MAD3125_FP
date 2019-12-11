@@ -11,4 +11,10 @@ public class preference {
         preferences = context.getSharedPreferences("myPreference", Context.MODE_PRIVATE);
     }
 
+    public void put(String key, String value){
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString(key, value);
+        editor.apply();
+    }
+
 }
