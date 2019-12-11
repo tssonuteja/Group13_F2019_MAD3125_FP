@@ -1,4 +1,4 @@
-package com.example.group13_f2019_mad3125_fp;
+package com.example.group13_f2019_mad3125_fp.adapter;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.group13_f2019_mad3125_fp.R;
 import com.example.group13_f2019_mad3125_fp.interfaces.OnPayrollClicked;
 import com.example.group13_f2019_mad3125_fp.models.Employee;
 

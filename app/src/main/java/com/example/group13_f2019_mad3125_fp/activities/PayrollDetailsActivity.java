@@ -1,4 +1,4 @@
-package com.example.group13_f2019_mad3125_fp;
+package com.example.group13_f2019_mad3125_fp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,18 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.group13_f2019_mad3125_fp.R;
 import com.example.group13_f2019_mad3125_fp.models.Employee;
 import com.example.group13_f2019_mad3125_fp.models.Job;
 import com.example.group13_f2019_mad3125_fp.models.Vehicle;
 
 import java.util.Calendar;
 
-import static com.example.group13_f2019_mad3125_fp.MainActivity.COMMISSION_BASED;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.FIXED_BASED;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.FULL_TIME;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.INTERN;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.PART_TIME;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.employeeList;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.COMMISSION_BASED;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.FIXED_BASED;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.FULL_TIME;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.INTERN;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.PART_TIME;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.employeeList;
 
 
 public class PayrollDetailsActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.example.group13_f2019_mad3125_fp.ui.addEmployee;
+package com.example.group13_f2019_mad3125_fp.fragments;
 
 import android.os.Bundle;
 
@@ -21,14 +21,14 @@ import com.example.group13_f2019_mad3125_fp.R;
 import com.example.group13_f2019_mad3125_fp.models.Vehicle;
 import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
 
-import static com.example.group13_f2019_mad3125_fp.MainActivity.CAR;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.COMMISSION_BASED;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.FIXED_BASED;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.FULL_TIME;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.INTERN;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.MOTORCYCLE;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.PART_TIME;
-import static com.example.group13_f2019_mad3125_fp.MainActivity.employeeList;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.CAR;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.COMMISSION_BASED;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.FIXED_BASED;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.FULL_TIME;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.INTERN;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.MOTORCYCLE;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.PART_TIME;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.employeeList;
 
 public class AddEmployeeFragment extends Fragment {
     private RadioGroup rg_part_time, vehicle_layout;

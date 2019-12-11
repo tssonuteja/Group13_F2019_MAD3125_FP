@@ -1,4 +1,4 @@
-package com.example.group13_f2019_mad3125_fp;
+package com.example.group13_f2019_mad3125_fp.activities;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -15,11 +15,13 @@ import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.group13_f2019_mad3125_fp.Preference;
+import com.example.group13_f2019_mad3125_fp.R;
 import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
 import com.example.group13_f2019_mad3125_fp.models.Employee;
-import com.example.group13_f2019_mad3125_fp.ui.addEmployee.AddEmployeeFragment;
-import com.example.group13_f2019_mad3125_fp.ui.home.HomeFragment;
-import com.example.group13_f2019_mad3125_fp.ui.listPayroll.ListPayrollFragment;
+import com.example.group13_f2019_mad3125_fp.fragments.AddEmployeeFragment;
+import com.example.group13_f2019_mad3125_fp.fragments.HomeFragment;
+import com.example.group13_f2019_mad3125_fp.fragments.ListPayrollFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.drawerlayout.widget.DrawerLayout;

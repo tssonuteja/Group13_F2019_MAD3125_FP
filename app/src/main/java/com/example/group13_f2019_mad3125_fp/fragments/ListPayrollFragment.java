@@ -1,8 +1,6 @@
-package com.example.group13_f2019_mad3125_fp.ui.listPayroll;
+package com.example.group13_f2019_mad3125_fp.fragments;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,12 +12,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.group13_f2019_mad3125_fp.PayrollAdapter;
-import com.example.group13_f2019_mad3125_fp.PayrollDetailsActivity;
+import com.example.group13_f2019_mad3125_fp.adapter.PayrollAdapter;
+import com.example.group13_f2019_mad3125_fp.activities.PayrollDetailsActivity;
 import com.example.group13_f2019_mad3125_fp.R;
 import com.example.group13_f2019_mad3125_fp.interfaces.OnPayrollClicked;
 
-import static com.example.group13_f2019_mad3125_fp.MainActivity.employeeList;
+import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.employeeList;
 
 
 
