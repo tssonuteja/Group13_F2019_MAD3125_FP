@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.Calendar;
 
 
 public class PayrollDetailsActivity extends AppCompatActivity {
@@ -38,6 +39,12 @@ public class PayrollDetailsActivity extends AppCompatActivity {
 
     }
 
-    
+    private int calculateAge(){
+        Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        return year - employee.getAge();
+    }
+
+
 }
 }
