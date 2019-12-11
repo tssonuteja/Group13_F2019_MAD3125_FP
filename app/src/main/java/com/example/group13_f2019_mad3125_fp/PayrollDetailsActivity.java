@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.group13_f2019_mad3125_fp.models.Employee;
+import com.example.group13_f2019_mad3125_fp.models.Job;
+import com.example.group13_f2019_mad3125_fp.models.Vehicle;
+
 import java.util.Calendar;
 
 import static com.example.group13_f2019_mad3125_fp.MainActivity.COMMISSION_BASED;

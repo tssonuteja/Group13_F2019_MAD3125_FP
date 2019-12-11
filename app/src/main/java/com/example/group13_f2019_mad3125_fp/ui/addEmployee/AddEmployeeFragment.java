@@ -1,7 +1,5 @@
 package com.example.group13_f2019_mad3125_fp.ui.addEmployee;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -16,13 +14,11 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
 
-import com.example.group13_f2019_mad3125_fp.Employee;
-import com.example.group13_f2019_mad3125_fp.Job;
+import com.example.group13_f2019_mad3125_fp.models.Employee;
+import com.example.group13_f2019_mad3125_fp.models.Job;
 import com.example.group13_f2019_mad3125_fp.R;
-import com.example.group13_f2019_mad3125_fp.Vehicle;
+import com.example.group13_f2019_mad3125_fp.models.Vehicle;
 import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
 
 import static com.example.group13_f2019_mad3125_fp.MainActivity.CAR;

@@ -6,11 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.group13_f2019_mad3125_fp.Preference;
-import com.example.group13_f2019_mad3125_fp.R;
-import com.example.group13_f2019_mad3125_fp.fragments.AddEmployeeFragment;
-import com.example.group13_f2019_mad3125_fp.fragments.HomeFragment;
-import com.example.group13_f2019_mad3125_fp.fragments.ListPayrollFragment;
 
 import android.view.MenuItem;
 import android.view.View;
@@ -22,6 +17,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
 import com.example.group13_f2019_mad3125_fp.models.Employee;
+import com.example.group13_f2019_mad3125_fp.ui.addEmployee.AddEmployeeFragment;
+import com.example.group13_f2019_mad3125_fp.ui.home.HomeFragment;
+import com.example.group13_f2019_mad3125_fp.ui.listPayroll.ListPayrollFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.drawerlayout.widget.DrawerLayout;
