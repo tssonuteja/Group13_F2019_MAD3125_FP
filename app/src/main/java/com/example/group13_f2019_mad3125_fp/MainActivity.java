@@ -3,6 +3,9 @@ package com.example.group13_f2019_mad3125_fp;
 import android.os.Bundle;
 
 import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
+import com.example.group13_f2019_mad3125_fp.ui.addEmployee.AddEmployeeFragment;
+import com.example.group13_f2019_mad3125_fp.ui.home.HomeFragment;
+import com.example.group13_f2019_mad3125_fp.ui.listPayroll.ListPayrollFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -33,7 +36,8 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
     Fragment[] fragments;
     Preference preference;
     public static List<Employee> employeeList = new ArrayList<>();
-    
+    public static final String FULL_TIME = "Full time", INTERN = "Intern", PART_TIME = "Part time",
+            CAR = "Car", MOTORCYCLE = "Motorcycle", COMMISSION_BASED = "Commission based part time", FIXED_BASED = "Fixed based part time";
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -42,26 +46,20 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send)
-                .setDrawerLayout(drawer)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-        NavigationUI.setupWithNavController(navigationView, navController);
+
+        preference = new Preference(this);
+
+        drawer = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+
+        setUpNavigationView();
+
+        fragments = new Fragment[]{new HomeFragment(), new AddEmployeeFragment(), new ListPayrollFragment()};
+
+        openFragment(0);
+
+        new AddEmployeeFragment().setOnOpenTab(this);
+
     }
 
     @Override
