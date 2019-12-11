@@ -2,6 +2,7 @@ package com.example.group13_f2019_mad3125_fp;
 
 import android.os.Bundle;
 
+import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -21,7 +22,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OpenTab {
+    {
 
     private AppBarConfiguration mAppBarConfiguration;
 
