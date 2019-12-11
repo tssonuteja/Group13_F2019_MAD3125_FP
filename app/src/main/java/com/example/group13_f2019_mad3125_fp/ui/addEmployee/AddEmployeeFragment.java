@@ -138,7 +138,15 @@ public class AddEmployeeFragment extends Fragment {
                 }
             }
         });
+        root.findViewById(R.id.btn_save).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onSaveClicked();
+            }
+        });
 
+        return root;
+    }
     }
 
 
