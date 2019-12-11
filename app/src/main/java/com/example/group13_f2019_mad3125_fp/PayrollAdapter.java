@@ -19,6 +19,9 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
     private Context context;
     private List<Employee> employeeList;
     private OnPayrollClicked onPayrollClicked;
+    public PayrollAdapter(Context context, List<Employee> employeeList, OnPayrollClicked onPayrollClicked) {
+        
+    }
 
 
 }
