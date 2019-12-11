@@ -38,6 +38,12 @@ public class AddEmployeeFragment extends Fragment {
         rb_full_time = root.findViewById(R.id.rb_full_time);
         part_time_layout = root.findViewById(R.id.part_time_layout);
         intern_layout = root.findViewById(R.id.intern_layout);
+        full_time_layout = root.findViewById(R.id.full_time_layout);
+        rg_part_time = root.findViewById(R.id.rg_part_time);
+        vehicle_layout = root.findViewById(R.id.vehicle_layout);
+        vehicle_details_layout = root.findViewById(R.id.vehicle_details_layout);
+        rbCar  = root.findViewById(R.id.rb_car);
+        rbBike = root.findViewById(R.id.rb_bike);
     }
 
 
