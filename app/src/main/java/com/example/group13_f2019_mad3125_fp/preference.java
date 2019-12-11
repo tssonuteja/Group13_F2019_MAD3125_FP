@@ -26,4 +26,8 @@ public class preference {
         return preferences.getBoolean(key, false);
     }
 
+    public String getString(String key){
+        return preferences.getString(key, "");
+    }
+
 }
