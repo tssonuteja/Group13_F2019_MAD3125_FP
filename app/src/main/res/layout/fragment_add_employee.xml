@@ -99,6 +99,15 @@
             android:background="@color/white"
             android:inputType="text"/>
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job Details"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"/>
 
 
 </ScrollView>
