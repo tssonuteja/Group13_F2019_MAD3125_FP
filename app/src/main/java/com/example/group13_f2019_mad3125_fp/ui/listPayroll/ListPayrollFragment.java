@@ -4,7 +4,9 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,19 +23,15 @@ import com.example.group13_f2019_mad3125_fp.R;
  * create an instance of this fragment.
  */
 public class ListPayrollFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private RecyclerView payroll_list;
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_list_payroll, container, false);
+        payroll_list = root.findViewById(R.id.payroll_list);
 
-    private OnFragmentInteractionListener mListener;
-
-    public ListPayrollFragment() {
-        // Required empty public constructor
+        setAdapter();
+        return root;
     }
 
     /**
