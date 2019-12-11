@@ -19,6 +19,16 @@
         android:layout_margin="5dp"
         android:background="@color/white"
         android:inputType="textPersonName"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_dob"
+        android:hint="Age"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:inputType="number"/>
 
 
 </ScrollView>
