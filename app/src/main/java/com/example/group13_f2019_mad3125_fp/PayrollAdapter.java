@@ -24,6 +24,8 @@ public class PayrollAdapter extends RecyclerView.Adapter<PayrollAdapter.ViewHold
         this.employeeList = employeeList;
         this.onPayrollClicked = onPayrollClicked;
     }
-
+    @NonNull
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
 }
