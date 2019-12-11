@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+
+
 public class PayrollDetailsActivity extends AppCompatActivity {
     Employee employee;
     TextView tv_job_one, tv_job_two, tv_job_three, tv_job_type, tv_vehicle, tv_earning, tv_name;
@@ -21,6 +23,8 @@ public class PayrollDetailsActivity extends AppCompatActivity {
         tv_vehicle = findViewById(R.id.tv_vehicle);
         tv_earning = findViewById(R.id.tv_earning);
         tv_name = findViewById(R.id.tv_name);
+        int position = getIntent().getIntExtra("position", 0);
+        employee = employeeList.get(position);
 
     }
 }
