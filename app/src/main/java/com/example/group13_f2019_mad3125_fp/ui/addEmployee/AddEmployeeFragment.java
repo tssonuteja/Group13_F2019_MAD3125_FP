@@ -19,7 +19,20 @@ import android.widget.RadioGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.group13_f2019_mad3125_fp.Employee;
+import com.example.group13_f2019_mad3125_fp.Job;
 import com.example.group13_f2019_mad3125_fp.R;
+import com.example.group13_f2019_mad3125_fp.Vehicle;
+import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
+
+import static com.example.group13_f2019_mad3125_fp.MainActivity.CAR;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.COMMISSION_BASED;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.FIXED_BASED;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.FULL_TIME;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.INTERN;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.MOTORCYCLE;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.PART_TIME;
+import static com.example.group13_f2019_mad3125_fp.MainActivity.employeeList;
 
 public class AddEmployeeFragment extends Fragment {
     private RadioGroup rg_part_time, vehicle_layout;
