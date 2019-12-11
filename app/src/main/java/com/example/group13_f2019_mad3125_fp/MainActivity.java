@@ -1,5 +1,7 @@
 package com.example.group13_f2019_mad3125_fp;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,6 +33,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.view.Window;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -131,6 +135,24 @@ public class MainActivity extends AppCompatActivity implements OpenTab {
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
+    private void showHelpDialog() {
+        // TODO: 06/12/2019
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.custom_dialog_layout);
+        Button dialogButton = (Button) dialog.findViewById(R.id.btn_dialog);
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+
+    }
+
     @Override
     public boolean onSupportNavigateUp() {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
