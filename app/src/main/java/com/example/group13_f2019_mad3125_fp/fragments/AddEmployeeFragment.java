@@ -1,10 +1,8 @@
 package com.example.group13_f2019_mad3125_fp.fragments;
 
+
+
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,11 +13,14 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+
+import com.example.group13_f2019_mad3125_fp.R;
+import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
 import com.example.group13_f2019_mad3125_fp.models.Employee;
 import com.example.group13_f2019_mad3125_fp.models.Job;
-import com.example.group13_f2019_mad3125_fp.R;
 import com.example.group13_f2019_mad3125_fp.models.Vehicle;
-import com.example.group13_f2019_mad3125_fp.interfaces.OpenTab;
 
 import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.CAR;
 import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.COMMISSION_BASED;
@@ -31,16 +32,15 @@ import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.PART_
 import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.employeeList;
 
 public class AddEmployeeFragment extends Fragment {
+
     private RadioGroup rg_part_time, vehicle_layout;
     private LinearLayout part_time_layout, intern_layout, full_time_layout, vehicle_details_layout;
     private RadioButton rb_commission_based, rb_fixed_based, rb_part_time, rb_intern, rb_full_time, rbCar, rbBike;
     private CheckBox has_vehicle_check;
     EditText etName, etSalary, etBonus, etSchool, etRate, etHours, etCommission, etFixed, etMake, etPlate;
     EditText tvDob;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
         View root = inflater.inflate(R.layout.fragment_add_employee, container, false);
         has_vehicle_check = root.findViewById(R.id.has_vehicle_check);
         rb_commission_based = root.findViewById(R.id.rb_commission_based);
@@ -54,9 +54,9 @@ public class AddEmployeeFragment extends Fragment {
         rg_part_time = root.findViewById(R.id.rg_part_time);
         vehicle_layout = root.findViewById(R.id.vehicle_layout);
         vehicle_details_layout = root.findViewById(R.id.vehicle_details_layout);
-        rbCar = root.findViewById(R.id.rb_car);
+        rbCar  = root.findViewById(R.id.rb_car);
         rbBike = root.findViewById(R.id.rb_bike);
-        etName = root.findViewById(R.id.et_name);
+        etName  = root.findViewById(R.id.et_name);
         etSalary = root.findViewById(R.id.et_salary);
         etBonus = root.findViewById(R.id.et_bonus);
         etSchool = root.findViewById(R.id.et_school);
@@ -64,9 +64,10 @@ public class AddEmployeeFragment extends Fragment {
         etHours = root.findViewById(R.id.et_hours);
         etCommission = root.findViewById(R.id.et_commission);
         etFixed = root.findViewById(R.id.et_fixed_amount);
-        etMake = root.findViewById(R.id.et_make);
+        etMake =  root.findViewById(R.id.et_make);
         etPlate = root.findViewById(R.id.et_plate);
         tvDob = root.findViewById(R.id.tv_dob);
+
 
         has_vehicle_check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -75,13 +76,13 @@ public class AddEmployeeFragment extends Fragment {
                     vehicle_layout.setVisibility(View.VISIBLE);
                     vehicle_details_layout.setVisibility(View.VISIBLE);
                     rbCar.setChecked(true);
-                } else {
+                }
+                else {
                     vehicle_layout.setVisibility(View.GONE);
                     vehicle_details_layout.setVisibility(View.GONE);
                 }
             }
         });
-
 
         rb_full_time.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -127,6 +128,7 @@ public class AddEmployeeFragment extends Fragment {
                 }
             }
         });
+
         rb_commission_based.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -137,6 +139,7 @@ public class AddEmployeeFragment extends Fragment {
                 }
             }
         });
+
         rb_fixed_based.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -147,6 +150,7 @@ public class AddEmployeeFragment extends Fragment {
                 }
             }
         });
+
         root.findViewById(R.id.btn_save).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -156,6 +160,8 @@ public class AddEmployeeFragment extends Fragment {
 
         return root;
     }
+
+
     private void onSaveClicked(){
         Employee employee = new Employee();
         Job job = new Job();
@@ -205,4 +211,3 @@ public class AddEmployeeFragment extends Fragment {
         AddEmployeeFragment.openTab = openTab;
     }
 }
-

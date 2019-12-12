@@ -5,75 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.PayrollDetailsActivity"
-    android:background="@drawable/background"
     android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="5dp">
-
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/ic_person"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="10dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_name"
-        android:text="Name (yr)"
-        android:padding="5dp"
-        android:textSize="14sp"
-        android:textColor="@color/black"
-        android:gravity="center"/>
-
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_person"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"/>
         <TextView
-            android:id="@+id/tv_vehicle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:text="Name (yr)"
             android:padding="5dp"
-            android:text="Vehicle"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp" />
-
-
-        <TextView
-            android:id="@+id/tv_job_type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="Job Type"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/tv_job_one"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:text="Job1"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_job_two"
-        android:text="Job2"
-        android:padding="5dp"
-        android:textSize="14sp"
-        android:textColor="@color/black"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_job_three"
-        android:text="Job3"
-        android:padding="5dp"
-        android:textSize="14sp"
-        android:textColor="@color/black"/>
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -83,6 +35,51 @@
             android:padding="5dp"
             android:textSize="14sp"
             android:textColor="@color/black"/>
-    </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_vehicle"
+            android:text="Vehicle"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_job_type"
+            android:text="Job Type"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job1"
+            android:id="@+id/tv_job_one"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_job_two"
+            android:text="Job2"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_job_three"
+            android:text="Job3"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
 </ScrollView>

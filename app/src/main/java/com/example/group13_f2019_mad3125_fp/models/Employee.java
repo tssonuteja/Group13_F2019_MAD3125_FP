@@ -6,6 +6,7 @@ public class Employee {
     private String earning;
     private Vehicle vehicle;
     private Job job;
+
     public String getName() {
         return name;
     }
@@ -45,5 +46,4 @@ public class Employee {
     public void setJob(Job job) {
         this.job = job;
     }
-
 }

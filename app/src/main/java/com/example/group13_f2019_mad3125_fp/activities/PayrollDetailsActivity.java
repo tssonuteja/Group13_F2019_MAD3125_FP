@@ -1,5 +1,7 @@
 package com.example.group13_f2019_mad3125_fp.activities;
 
+
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -20,11 +22,10 @@ import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.INTER
 import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.PART_TIME;
 import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.employeeList;
 
-
 public class PayrollDetailsActivity extends AppCompatActivity {
+
     Employee employee;
     TextView tv_job_one, tv_job_two, tv_job_three, tv_job_type, tv_vehicle, tv_earning, tv_name;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,16 +38,17 @@ public class PayrollDetailsActivity extends AppCompatActivity {
         tv_vehicle = findViewById(R.id.tv_vehicle);
         tv_earning = findViewById(R.id.tv_earning);
         tv_name = findViewById(R.id.tv_name);
+
         int position = getIntent().getIntExtra("position", 0);
         employee = employeeList.get(position);
 
-        tv_name.setText(employee.getName() + " (" + calculateAge() + ")");
-        tv_earning.setText("Earning : " + calculateEarning());
+        tv_name.setText(employee.getName()+" ("+calculateAge()+")");
+        tv_earning.setText("Earning : "+calculateEarning());
         Vehicle vehicle = employee.getVehicle();
-        if (vehicle == null) {
+        if (vehicle == null){
             tv_vehicle.setVisibility(View.GONE);
         } else {
-            tv_vehicle.setText(vehicle.getMake() + " " + vehicle.getIsA() + " : " + vehicle.getPlate());
+            tv_vehicle.setText(vehicle.getMake()+" "+vehicle.getIsA()+" : "+vehicle.getPlate());
         }
 
     }
@@ -56,7 +58,6 @@ public class PayrollDetailsActivity extends AppCompatActivity {
         int year = calendar.get(Calendar.YEAR);
         return year - employee.getAge();
     }
-
 
     private double calculateEarning(){
         double earning = 0;
@@ -70,15 +71,13 @@ public class PayrollDetailsActivity extends AppCompatActivity {
                 earning = job.getSalary()+job.getBonus();
                 break;
             case PART_TIME:
-                if (job.getPartTimeType().equalsIgnoreCase(FIXED_BASED)) {
-                    tv_job_one.setText("Rate : " + job.getRate());
-                    tv_job_two.setText("Hours worked : " + job.getHours());
-                    tv_job_three.setText("Fixed amount : " + job.getFixed());
+                if (job.getPartTimeType().equalsIgnoreCase(FIXED_BASED)){
+                    tv_job_one.setText("Rate : "+job.getRate());
+                    tv_job_two.setText("Hours worked : "+job.getHours());
+                    tv_job_three.setText("Fixed amount : "+job.getFixed());
                     tv_job_type.setText(FIXED_BASED);
-                    earning = job.getFixed() + (job.getRate() * job.getHours());
-                }
-
-                else {
+                    earning = job.getFixed()+(job.getRate()*job.getHours());
+                } else {
                     tv_job_one.setText("Rate : "+job.getRate());
                     tv_job_two.setText("Hours worked : "+job.getHours());
                     tv_job_three.setText("Commission : "+job.getCommission());
@@ -96,6 +95,5 @@ public class PayrollDetailsActivity extends AppCompatActivity {
                 break;
         }
         return earning;
-
-}
+    }
 }

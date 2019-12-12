@@ -1,9 +1,12 @@
 package com.example.group13_f2019_mad3125_fp.models;
 
+
+
 public class Vehicle {
     private String isA;
     private String make;
     private String plate;
+
     public String getIsA() {
         return isA;
     }
@@ -19,6 +22,7 @@ public class Vehicle {
     public void setMake(String make) {
         this.make = make;
     }
+
     public String getPlate() {
         return plate;
     }
@@ -27,4 +31,3 @@ public class Vehicle {
         this.plate = plate;
     }
 }
-

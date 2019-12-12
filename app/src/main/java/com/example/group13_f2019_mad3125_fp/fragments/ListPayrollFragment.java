@@ -1,25 +1,22 @@
 package com.example.group13_f2019_mad3125_fp.fragments;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
+import com.example.group13_f2019_mad3125_fp.interfaces.OnPayrollClicked;
 import com.example.group13_f2019_mad3125_fp.adapter.PayrollAdapter;
 import com.example.group13_f2019_mad3125_fp.activities.PayrollDetailsActivity;
 import com.example.group13_f2019_mad3125_fp.R;
-import com.example.group13_f2019_mad3125_fp.interfaces.OnPayrollClicked;
+
 
 import static com.example.group13_f2019_mad3125_fp.activities.MainActivity.employeeList;
-
-
 
 public class ListPayrollFragment extends Fragment {
 
@@ -50,4 +47,3 @@ public class ListPayrollFragment extends Fragment {
     }
 
 }
-

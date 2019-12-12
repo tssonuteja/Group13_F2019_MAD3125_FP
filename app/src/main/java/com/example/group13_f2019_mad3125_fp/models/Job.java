@@ -1,5 +1,6 @@
 package com.example.group13_f2019_mad3125_fp.models;
 
+
 public class Job {
     private String jobType;
     private String partTimeType;
@@ -10,6 +11,7 @@ public class Job {
     private double hours;
     private double commission;
     private double fixed;
+
     public String getJobType() {
         return jobType;
     }
@@ -81,5 +83,4 @@ public class Job {
     public void setPartTimeType(String partTimeType) {
         this.partTimeType = partTimeType;
     }
-
 }
